@@ -35,8 +35,7 @@ while 1:
         # check mouse buttondown
         if event.type==pygame.MOUSEBUTTONDOWN:
             posX,posY=pygame.mouse.get_pos()
-            recordMousePos(posX,posY)
-            #print (mousePos)
+            recordMousePos(posX,posY,mousePos)
             if isCanExchange(mousePos):
                 Exchange(mousePos)
                 mousePos=[None,None]

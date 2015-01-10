@@ -31,7 +31,7 @@ def getGridIndex(posX,posY):
     else:
         return None
 
-def recordMousePos(posX,posY):
+def recordMousePos(posX,posY,mousePos):
     '''记录最近2次鼠标点击格子区域的gridXY in mousePos'''
     if posY>=324:
         iX,iY=getIndexXYbyPosXY(posX,posY)
